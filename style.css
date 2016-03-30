@@ -1,8 +1,10 @@
-body{
-    margin: 0;
-    padding: 0;
+html,body{
+    background: linear-gradient(to bottom, #3d3d3d, white);
     font: 1em/1.4em sans-serif;
+    margin: 0;
+    height: 100%;
 }
+/* Остальные стили относяться к левому меню ----------------------------------------------------------*/
 a{
    text-decoration: none;
 }
@@ -14,7 +16,13 @@ ul{
 /*Внешний вид меню*/
 .side{
     width: 200px;
-    margin: 20px;
+    margin: 0;
+}
+.main{
+    background: yellow;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
 .menu a{
     background: #3d3d3d;
@@ -29,15 +37,14 @@ ul{
     padding: 10px 0 10px 20px;
 }
 .menu li:fist-child a,
-.menu li .menu__drop li:.menu li:fist-child a,
-{
+.menu li .menu__drop li:.menu li:fist-child a,{
     border-radius: 3px 3px 0 0; 
     border-bottom: 0;
 }
 .menu li .menu__drop li a{
     border-radius: 0;
 }
-/*Всплывающие меню*/
+/*----------------------------------------------------------*/
 .menu__list{
     position: relative;
 }
@@ -58,12 +65,20 @@ ul{
 .menu__list::after{
     content: " ";
     position: absolute;
-    border: 10px solid;
+    border: 7px solid;
     border-color: transparent transparent transparent #fff;
-    top: 1em;
+    top: 15px;
     right: 0.7em;
     transition: 0.9s;
 }
 .menu__list:hover::after{
     transform: scaleX(-1);
+}
+/* ----------------------------------------------------------------- */
+/* ------------------------------------------------------------------*/
+.line{
+    background: #8B8682;
+    height: 30px;
+    width: 100%;
+    margin-top:80px;
 }
