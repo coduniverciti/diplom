@@ -18,7 +18,6 @@ ul{
 }
 .main{
     position: absolute;
-    background: yellow;
     width: 200px;
     margin-left: 30px;
     margin-top: 40px;
@@ -96,7 +95,10 @@ ul{
 .roditel a{
     color: white;
 }
-.roditel a:hover{
+.main a:hover{
+    color: yellow;
+}
+.footer a:hover{
     color: yellow;
 }
 .content{
@@ -107,6 +109,7 @@ ul{
 }
 /*-----------------------------*/
 /*Прижатый фуутер*/
+/*логотип*/
 .header{
     height: 60px;
     background: #000;
@@ -115,13 +118,32 @@ ul{
     font-family: serif;
     padding: 0;
 }
+.logo{
+    position: absolute;
+    top: 4px;
+}
+.logo img{
+    position: absolute;
+    width: 3.5em;
+    height: 2.5em;
+    top: 4px;
+    left: 30px;
+}
 .logo p{
     position: absolute;
-    font-size: 2em;
-    width: 150px;
-    top: -20px;
-    left: 20px;
+    font-family: fantasy;
+    font-size: 40px;
+    top: 0;
+    left: 95px;
+    margin: 0;
+    padding: 0;
 }
+.logo a:hover{
+    color: #fff;
+    text-decoration: none;
+    
+}
+/*-----------------------*/
 .search{
     position: absolute;
     left: 400px;
@@ -138,7 +160,7 @@ ul{
 .about{
     position: absolute;
     left: 40%;
-    bottom:  20px;
+    bottom:  17px;
 }
 .about mark{
     background: black;
