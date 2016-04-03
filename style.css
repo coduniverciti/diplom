@@ -20,7 +20,7 @@ ul{
     position: absolute;
     width: 200px;
     margin-left: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .menu a{
     background: #3d3d3d;
@@ -73,14 +73,6 @@ ul{
 }
 /* ----------------------------------------------------------------- */
 /* ------------------------------------------------------------------*/
-/*стили для прямую линю*/
-.line{
-    background: #8B8682;
-    height: 30px;
-    width: 100%;
-    margin-top:80px;
-}
-/*--------------------*/
 /*оснавная часть*/
 .roditel{
     min-height: 100%;
@@ -147,7 +139,38 @@ ul{
 .search{
     position: absolute;
     left: 400px;
-    top: 19px;
+    top: 12px;
+}
+.forma-poiska{
+    width: 500px;
+    margin: 0;
+    padding: 7px;
+    border-radius: 10px;
+    background: #3d3d3d;
+}
+.forma-poiska input{
+    width: 427px;
+    height: 20px;
+    font-size: 15px;
+    font-family: arial;
+    border: 0;
+    background: white;
+}
+.forma-poiska input:focus{
+    outline: 0;
+}
+.forma-poiska button{
+    padding: 0;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    width: 70px;
+    height: 22px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: cursive;
+    line-height: 12px;
+    background: #C1CDCD;
 }
 .footer{
     height: 60px;
@@ -172,3 +195,17 @@ ul{
     padding-left: 20px;
 }
 /*-----------------------------*/
+/*построчный навигация*/
+.p-navigasia{
+    position: absolute;
+    left: 250px;
+    bottom: 100px;
+    width:300px;
+    height: 20px;  
+}
+.p-navigasia a:hover{
+    color: yellow;
+}
+/*построчный навигация*/
+/*другой файл Обратная связь*/
+/*другой файл Обратная связь*/
