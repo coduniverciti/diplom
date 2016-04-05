@@ -93,11 +93,47 @@ ul{
 .footer a:hover{
     color: yellow;
 }
+/*начинаеться контент*/
 .content{
-    margin-left: 250px;
-    margin-top: 40px;
+    margin-left: 300px;
+    margin-top: 32px;
     margin-bottom: 50px;
-    width: 400px;
+    width: 780px;
+}
+.content h3{
+    padding: 2px;
+    margin: 30px 0 0 10px
+}
+.content table{
+    margin: 0;
+    width: 780px;
+    border-bottom: 1px dotted #fff;
+    margin-bottom: 20px;
+}
+.content .img img{
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 120px;
+}
+.content .p p{
+    padding-left: 10px;
+    margin: 10px 0 0;
+}
+.content .p{
+    padding: 0;
+    margin: 0;
+}
+.content a{
+    float: right;
+    margin-right: 10px;
+    background: black;
+    padding: 3px 5px;
+    border-radius: 6px;
+}
+.content a:hover{
+    color: yellow;
 }
 /*-----------------------------*/
 /*Прижатый фуутер*/
@@ -181,9 +217,8 @@ ul{
 /*----------------------------*/
 /*контакты*/
 .about{
-    position: absolute;
-    left: 40%;
-    bottom:  17px;
+    margin-top: 10px;
+    margin-left: 450px;
 }
 .about mark{
     background: black;
@@ -197,11 +232,10 @@ ul{
 /*-----------------------------*/
 /*построчный навигация*/
 .p-navigasia{
-    position: absolute;
-    left: 250px;
-    bottom: 100px;
-    width:300px;
-    height: 20px;  
+    position: relative;
+    width: 200px;
+    left: 350px;
+    bottom: 40px;
 }
 .p-navigasia a:hover{
     color: yellow;
