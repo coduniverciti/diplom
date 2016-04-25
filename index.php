@@ -1,44 +1,49 @@
+<?
+  include 'head_title.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Главный</title>
+    <title><?=$title?></title>
     <meta charset="UTF-8">
     <!-- Подключаем Стили -->
     <link rel="stylesheet" href="style.css">
+    <!-- Подключаем Стили -->
   </head>
   <body>
       <div class="roditel">
+      <!--Header-->
           <div class="header">
               <!--Логотип-->
-              <div class="logo">
-                <a href="#"><img src="logo/logo.png"></a>
-                  <p><a href="#">Books.kg</a></p>
-              </div>
-              <!----------------------------------------------->
-
+              <?
+				        include 'logo/logo.php';
+			        ?>
+              <!--Логотип-->
+			  
               <!--форма поиск-->
-              <div class="search">
-                  <form method="get" action="#" class="forma-poiska">
-                    <input type="text" placeholder="Введите название книг" required>
-                    <button type="submit">Поиск</button>
-                  </form>
-                </div>
-              <!--------------------------------------->
-              <div class="korzina">
-                <p><a href="#"><img src="logo/korzinka.png">Корзина</a></p>
-              </div>
+              <?
+				        include 'search.php';
+			       ?>
+              <!--форма поиск-->
+              
+			  <!--Корзина-->
+              <?
+				          include 'cars.php';
+			         ?>
+			  <!--Корзина-->   
           </div>
-              <!-- left menu ---------------------------------->  
+          <!--Header-->
+              <!-- left menu -->
               <div class="main">
                 <div  class="side">
                     <ul class="menu">
                         <li class="menu__list"><a href="#">Программирование</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Android</a></li> 
-                                <li><a href="#">С++</a></li> 
-                                <li><a href="#">Delphi</a></li> 
-                                <li><a href="#">Java</a></li> 
-                                <li><a href="#">Phython</a></li> 
+                                <li><a href="index.php?id=android">Android</a></li> 
+                                <li><a href="index.php?id=ci">С++</a></li> 
+                                <li><a href="index.php?id=delphi">Delphi</a></li> 
+                                <li><a href="index.php?id=java">Java</a></li> 
+                                <li><a href="index.php?id=python">Python</a></li> 
                             </ul>
                         </li>
                         <li class="menu__list"><a href="#">Веб технологии</a>
@@ -93,17 +98,28 @@
                             </ul>
                         </li>
                         <li><a href="#">Гостевая книга</a></li>
+                        <li><a href="#">Обратная связь</a></li>
                     </ul>
                 </div>
               </div>
-              <!---------------------------------------------->  
-          <!--Контент-->    
-	          <div class="content">
-                  <div class="obs">
-                    <h3>Контакты</h3>
+              <!--Left menu-->  
+                <!--Контент-->    
+      	          <div class="content">
+      	             <?
+                         include 'podkluchenie_menu.php';
+                     ?>    
                   </div>
+                  <!--Контент-->
+                  <!--Построчный навигация-->
+                  <div class="p-navigasia">
+                      <a href="#">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
                   </div>
-          <!----------------------------------------------------------->
+                  <!--Построчный навигация-->
+          
           <!--Footer-->
           <div class="footer">
               <div class="about">
@@ -112,7 +128,7 @@
                   </ul>
               </div>
           </div>
-          <!------------------------------------------------------------------------->
+          <!--Footer-->
     </div>
   </body>
 </html>
