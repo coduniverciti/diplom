@@ -1,11 +1,19 @@
-    <div class="content">
-        <div class="obs" style="background-color: yellow;">
-           <h3>Контакты</h3>
-           <form action="#" method="post">
-           	<label for="who_name">Ваша имя:</label><input type="text"name="who_name" id="who_name"><br>
-           	<label for="who_email">E-mail:</label><input type="text"name="who_email" id="who_email"><br>
-           	<textarea name="message"></textarea><br><br>
-           	<input type="submit" value="Отправить">
-           </form>
-        </div>
-    </div>
+<div class="about_alpha">
+	<div class="about_text">
+		<p>Информационные технологии - это все еще молодая, стремительно развивающаяся и крайне изменчивая отрасль, которая однако все глубже проникает в нашу жизнь. Аудитория потребителей (и создателей) электронных продуктов постоянно растет, такие вещи как компьютер и Всемирная Паутина популярны на территории всей планеты.<br><br>
+
+		Новейшие технологии достаточно сложны и для работы с ними придется многому научиться, в этом Вам и призван помочь портал Programmer's Klondike. Однако найдется не мало светлых голов, которые могли бы поделиться своими знаниями или идеями с другими заинтересованными людьми. Мы были бы очень рады помочь в этом - присылайте свои размышления, статьи, графику, знания и с ними познакомятся тысячи людей!<br><br>
+		Также мы всегда рады Вашим отзывам и предложениям по улучшению нашего сайта.</p>
+		<div class="obs">
+	    	<h3><b>Контакты</b></h3>
+	        	<form action="#" method="post">
+	           		<label>Ваша имя:<input type="text"name="who_name"></label><br><br>
+	           		<label>E-mail:<input type="text"name="who_email"></label><br><br>
+	           		<label>Введите сообщения.</label>
+	           		<textarea name="message" rows="6"cols="60"></textarea><br>
+	           		<input type="submit" value="Отправить" style="float: right;">
+	        	</form>
+		</div>
+	</div>
+	
+</div>

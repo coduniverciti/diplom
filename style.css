@@ -125,7 +125,7 @@ ul{
     margin-left: 300px;
     margin-top: 32px;
     margin-bottom: 70px;
-    width: 780px;
+    width: 1000px;
 }
 .content h3{
     padding: 2px;
@@ -280,10 +280,21 @@ ul{
 /*построчный навигация*/
 /*другой файл Обратная связь*/
 .obs{
-    border: 1px solid #fff;
-    background-color: yellow;
+    width: 500px;
+    height: 400px;
+    margin-left: 500px;
 }
-.obs h3{
-    border: 1px solid #fff;
+.obs form textarea,label{
+    float: right;
+    margin-right: 10px;
+}
+.about_text p{
+    padding: 15px;
+    float: left;
+}
+.about_text{
+    width: 500px;
+    height: 400px;
+    border-right: 1px dotted #fff;
 }
 /*другой файл Обратная связь*/

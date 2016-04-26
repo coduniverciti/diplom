@@ -48,70 +48,79 @@
                         </li>
                         <li class="menu__list"><a href="#">Веб технологии</a>
                             <ul class="menu__drop">
-                                <li><a href="#">HTML</a></li> 
-                                <li><a href="#">JavaScript</a></li> 
-                                <li><a href="#">jQuery</a></li> 
-                                <li><a href="#">PHP</a></li> 
-                                <li><a href="#">Perl</a></li> 
+                                <li><a href="index.php?id=html">HTML</a></li> 
+                                <li><a href="index.php?id=javascript">JavaScript</a></li> 
+                                <li><a href="index.php?id=jquery">jQuery</a></li> 
+                                <li><a href="index.php?id=php">PHP</a></li> 
+                                <li><a href="index.php?id=perl">Perl</a></li> 
                             </ul>
                         </li> 
                         <li class="menu__list"><a href="#">Безопасность</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Криптография</a></li> 
-                                <li><a href="#">Защита</a></li> 
-                                <li><a href="#">Хакерство</a></li> 
-                                <li><a href="#">Инфекции</a></li> 
+                                <li><a href="index.php?id=cripto">Криптография</a></li> 
+                                <li><a href="index.php?id=securite">Защита</a></li> 
+                                <li><a href="index.php?id=hack">Хакерство</a></li> 
+                                <li><a href="index.php?id=infecfi">Инфекции</a></li> 
                             </ul>
                         </li> 
                         <li class="menu__list"><a href="#">Разработка</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Управление</a></li> 
-                                <li><a href="#">Менеджмент</a></li> 
-                                <li><a href="#">Проектирование</a></li> 
-                                <li><a href="#">Usability</a></li> 
+                                <li><a href="index.php?id=desine">Управление</a></li> 
+                                <li><a href="index.php?id=menedj">Менеджмент</a></li> 
+                                <li><a href="index.php?id=project">Проектирование</a></li> 
+                                <li><a href="index.php?id=usability">Usability</a></li> 
                             </ul>
                         </li> 
                         <li class="menu__list"><a href="#">Базы Данных</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Общее</a></li> 
-                                <li><a href="#">Oracle</a></li> 
-                                <li><a href="#">MySQL</a></li> 
-                                <li><a href="#">MS SQL</a></li> 
-                                <li><a href="#">Прочее</a></li> 
+                                <li><a href="index.php?id=all">Общее</a></li> 
+                                <li><a href="index.php?id=oracle">Oracle</a></li> 
+                                <li><a href="index.php?id=mysql">MySQL</a></li> 
+                                <li><a href="index.php?id=mssql">MS SQL</a></li> 
+                                <li><a href="index.php?id=prochee">Прочее</a></li> 
                             </ul>
                         </li> 
                         <li class="menu__list"><a href="#">ОС</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Unix</a></li> 
-                                <li><a href="#">Linux</a></li> 
-                                <li><a href="#">FreeBSD</a></li> 
-                                <li><a href="#">Windows</a></li> 
-                                <li><a href="#">Прочее</a></li> 
+                                <li><a href="index.php?id=unix">Unix</a></li> 
+                                <li><a href="index.php?id=linux">Linux</a></li> 
+                                <li><a href="index.php?id=freebsd">FreeBSD</a></li> 
+                                <li><a href="index.php?id=windows">Windows</a></li> 
+                                <li><a href="index.php?id=prochee_one">Прочее</a></li> 
                             </ul>
                         </li>
                          <li class="menu__list"><a href="#">Теория</a>
                             <ul class="menu__drop">
-                                <li><a href="#">Общее</a></li> 
-                                <li><a href="#">Математика</a></li> 
-                                <li><a href="#">Алгоритмы</a></li> 
-                                <li><a href="#">Прочее</a></li>
+                                <li><a href="index.php?id=all_one">Общее</a></li> 
+                                <li><a href="index.php?id=mat">Математика</a></li> 
+                                <li><a href="index.php?id=algoritm">Алгоритмы</a></li> 
+                                <li><a href="index.php?id=prochee_two">Прочее</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Гостевая книга</a></li>
-                        <li><a href="#">Обратная связь</a></li>
                     </ul>
                 </div>
               </div>
               <!--Left menu-->  
+
                 <!--Контент-->    
       	          <div class="content">
       	             <?
                          include 'podkluchenie_menu.php';
+                         if($_GET['id']=='about'){
+                          include 'about.php';
+                         }
                      ?>    
                   </div>
                   <!--Контент-->
+
                   <!--Построчный навигация-->
-                  <div class="p-navigasia">
+                  <?
+                    if($_GET['id']=='about'){
+                      $display='none';
+                    }
+                  ?>
+                  <div class="p-navigasia"style="display:<?=$display?> ">
                       <a href="#">1</a>
                       <a href="#">2</a>
                       <a href="#">3</a>
@@ -121,14 +130,11 @@
                   <!--Построчный навигация-->
           
           <!--Footer-->
-          <div class="footer">
-              <div class="about">
-                  <ul>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Обратная связь</a><br/>&copy;&nbsp;2016 г&nbsp;&nbsp;&nbsp;<mark>Книги по программированию.</mark>
-                  </ul>
-              </div>
-          </div>
+          <?
+            include 'footer.php';
+          ?>
           <!--Footer-->
+
     </div>
   </body>
 </html>
