@@ -94,33 +94,34 @@ ul{
     color: yellow;
 }
 /*начинаеться контент*/
+
 /*корзинка*/
 .korzina{
     width: 300px;
     height: 60px;
     float: right;
     margin-top: 0px;
+    margin-right: 60px;
 }
 .korzina img{
     padding: 0;
-    width: 30px;
-    height: 25px;
+    width: 40px;
+    height: 35px;
+    margin: 0;
 }
-.korzina p a{
+.korzina a{
     float: right;
     font-size: 20px;
-    margin: 13px 5px;
+    margin: 10px 0;
 }
-.korzina p{
-    width: 120px;
-    height: 60px;
-    margin: 0;
-    float: right;
-}
-.korzina p a:hover{
+.korzina a:hover{
     color: yellow;
 }
+#mycart{
+    background-color: #8B8682;
+}
 /*корзинка*/
+
 .content{
     margin-left: 300px;
     margin-top: 32px;
