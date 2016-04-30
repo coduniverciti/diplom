@@ -1,5 +1,4 @@
 <?
-include 'function.php';
     $table = 'python';
 	$products = get_products($table);
 	foreach($products as $item):?>
