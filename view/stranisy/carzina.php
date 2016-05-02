@@ -1,7 +1,7 @@
 <?
 if($_SESSION['cart'] !== array()){
 ?>
-<h2 align="center" style="color: white;border-bottom: 2px solid #fff;">Ваша корзина товаров</h2>
+<h2 align="center" style="color: white;border-bottom: 2px solid #fff;padding-bottom: 20px;">Ваша корзина товаров</h2>
 <form action="index.php?view=update_cart" method="post" id="cart-form">
 
 <table id="mycart" align="center" cellspacing="0" cellpadding="0" border="0" style="border-radius: 10px;">
@@ -23,10 +23,13 @@ if($_SESSION['cart'] !== array()){
 	  </tr>
 	  <?endforeach;?>
 </table>
-	 <p class="total" align="center">Общая сумма заказа: <span class="product-price"><?=$_SESSION['total_price'];?> Сом</span></p>
+	 <p style="text-align: center;"><b>Общая сумма заказа:</b> <span class="product-price"><?=$_SESSION['total_price'];?> Сом</span></p>
 	 <p align="center"><input type="submit" name="update" value="Обновить" /></p>
 	
 </form>
+<p style="text-align: center;margin-top: 5%">
+<a href="index.php?view=zakaz"style="border-radius: 10px;background-color: black;padding: 10px;font-size: 20px;"><b>Оформить заказ</b></a>
+</p>
 <?
 }else{
 echo "<h2 style='text-align:center'>Ваша корзина пуста!<h2>";

@@ -20,6 +20,6 @@ if($_GET['view']=='update_cart'){
 	$_SESSION['total_price'] = total_price($_SESSION['cart']);
 	header('Location:index.php?view=carzina');
 }
-$view =empty($_GET['view'])?'index' : $_GET['view']; 
+$view =empty($_GET['view'])?'python' : $_GET['view']; 
 include($_SERVER[DOCUMENT_ROOT].'/view/shablon/books.php');
 ?>

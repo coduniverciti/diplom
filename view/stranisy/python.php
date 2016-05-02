@@ -1,3 +1,4 @@
+<h2 style="text-align: center;border-bottom: 2px solid #fff;padding-bottom: 20px;">Книги по программированию.</h2>
 <?
     $table = 'python';
 	$products = get_products($table);

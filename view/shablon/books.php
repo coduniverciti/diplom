@@ -13,8 +13,8 @@
           <div class="header">
               <!--Логотип-->
               <?
-				 include 'logo/logo.php';
-			  ?>
+      				 include 'logo/logo.php';
+      			  ?>
               <!--Логотип-->
 			  
               <!--форма поиск-->
@@ -31,7 +31,7 @@
           </div>
           <!--Header-->
               <!-- left menu -->
-              <div class="main">
+              <!--div class="main">
                 <div  class="side">
                     <ul class="menu">
                         <li class="menu__list"><a href="#">Программирование</a>
@@ -97,7 +97,7 @@
                         <li><a href="#">Гостевая книга</a></li>
                     </ul>
                 </div>
-              </div>
+              </div-->
               <!--Left menu-->  
 
                 <!--Контент-->    
