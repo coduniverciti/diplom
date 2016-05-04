@@ -18,9 +18,12 @@
               <!--Логотип-->
 			  
               <!--форма поиск-->
-              <?
-				include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/search.php');
-			  ?>
+              <div class="search">
+                  <form action="index.php?view=search_to_books" method="POST" class="forma-poiska">
+                      <input type="text" name="text" placeholder="Введите название книг" required>
+                      <button type="submit" name="search_to_book">Поиск</button>
+                  </form>
+              </div>
               <!--форма поиск-->
               
 			  <!--Корзина-->
@@ -104,9 +107,6 @@
       	          <div class="content">
       	             <?
                          include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/'.$view.'.php');
-                        
-                         //Постраничная навигация
-
                      ?>    
                   </div>
                   <!--Контент-->
