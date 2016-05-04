@@ -104,6 +104,9 @@
       	          <div class="content">
       	             <?
                          include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/'.$view.'.php');
+                        
+                         //Постраничная навигация
+
                      ?>    
                   </div>
                   <!--Контент-->
