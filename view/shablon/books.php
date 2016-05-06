@@ -21,15 +21,17 @@
               <div class="search">
                   <form action="index.php?view=search_to_books" method="POST" class="forma-poiska">
                       <input type="text" name="text" placeholder="Введите название книг" required>
-                      <button type="submit" name="search_to_book">Поиск</button>
+                      <button type="submit" name="word">Поиск</button>
                   </form>
               </div>
               <!--форма поиск-->
               
 			  <!--Корзина-->
               <?
-					include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/cars.php');	         
-			  ?>
+              if($_GET['view'] != 'admin'){
+					       include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/cars.php');	         
+			        } 
+        ?>
 			  <!--Корзина-->   
           </div>
           <!--Header-->
