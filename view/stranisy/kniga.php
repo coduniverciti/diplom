@@ -6,7 +6,7 @@ $product = get_product($id,$table);
 <div style="width: 750px;margin-bottom: 20%">
 	<h2 style="text-align: center;"><?=$product['title']?></h2>
 	<img style="float: left; margin: 10px 10px; border-radius: 20px" src="images/<?=$product['img']?>">
-	<p><?=$product['text']?></p><br>
+	<p><?=$product['textt']?></p><br>
 	<blockquote>
 		<b>Год издания:</b> <?=$product['god']?><br>
 		<b>Издательство:</b> <?=$product['izdatelstvo']?><br>

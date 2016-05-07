@@ -6,7 +6,7 @@ include 'func.php';
                           $page = $_GET["page"];
                           if ($page < 1 or $page == "") $page = 1;
                           // количество строк-книг на стр.
-                          $limit = 5;
+                          $limit = 3;
                           // начало выборки из БД
                           $start = getStart($page, $limit);
                           
@@ -16,7 +16,7 @@ include 'func.php';
               							<tr>
               								<td class='img'><img src='images/<?=$articles[$i]['img']?>'></td>
               								<td class='p'><h3><a href="index.php?view=kniga&id=<?=$articles[$i]['id']?>"><?=$articles[$i]['title']?></a></h3>
-              								<p style="height: 50px; overflow: hidden;"><?=$articles[$i]['text']?></p></td>
+              								<p style="height: 50px; overflow: hidden;"><?=$articles[$i]['textt']?></p></td>
               							</tr>
             							</table>
 							<?endfor;?>

@@ -20,7 +20,7 @@
               <!--форма поиск-->
               <div class="search">
                   <form action="index.php?view=search_to_books" method="POST" class="forma-poiska">
-                      <input type="text" name="text" placeholder="Введите название книг" required>
+                      <input type="text" name="textt" placeholder="Введите название книг">
                       <button type="submit" name="word">Поиск</button>
                   </form>
               </div>

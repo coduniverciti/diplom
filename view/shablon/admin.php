@@ -23,7 +23,7 @@
                 <!--Контент-->    
       	          <div class="content">
       	             <?
-                         include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/admin.php');
+                       include($_SERVER[DOCUMENT_ROOT].'/view/stranisy/admin.php');
                      ?>    
                   </div>
                   <!--Контент-->
