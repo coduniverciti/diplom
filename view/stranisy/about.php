@@ -22,7 +22,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	           		<div>
 	           		<textarea name="message" rows="6"cols="60"></textarea>
 	           		</div>
-	           		<label><input style="float: right;margin-bottom:600px;background-color: black;color:white;border-radius: 7px;padding: 5px;"type="submit" value="Отправить"></label>
+	           		<label><input style="float: right;margin-bottom:600px;background-color: #0083ca;color:white;border-radius: 7px;padding: 5px;"type="submit" value="Отправить"></label>
 	        	</form>
 		</div>
 	</div>
