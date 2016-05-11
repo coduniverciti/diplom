@@ -22,7 +22,7 @@ function search($word){
 	return $results;
 }
 
-echo "<h1 style='text-align:center;border-bottom:2px solid #fff;padding-bottom:10px;'>Результат поиска.</h1>";
+echo "<h1 style='text-align:center;border-bottom:1px solid #000;padding-bottom:10px;'>Результат поиска.</h1>";
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	$word = trim(strip_tags((htmlspecialchars($_POST['textt']))));

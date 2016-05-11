@@ -5,21 +5,21 @@ if($_SESSION['cart'] && !isset($_POST['zakaz'])){
 <form action="<?$_SERVER['PHP_SELF'];?>" method="post" id="cart-form">
 
 		<table id="mycart" align="center" cellspacing="0" cellpadding="0" border="0" style="border-radius: 10px;">
-			  <tr style="background-color: black;">
-				  <th style="padding: 3px;">Книги</th>
-					<th style="padding: 3px;border-left: 1px solid white;">Цена</th>
-					<th style="padding: 3px;border-left: 1px solid white;">Кол-во</th>
-					<th style="padding: 3px;border-left: 1px solid white;">Всего</th>
+			  <tr style="background-color: #0083ca;">
+				  <th style="padding: 3px;color: #fff;">Книги</th>
+					<th style="color:#fff;padding: 3px;border-left: 1px solid white;">Цена</th>
+					<th style="color:#fff;padding: 3px;border-left: 1px solid white;">Кол-во</th>
+					<th style="color:#fff;padding: 3px;border-left: 1px solid white;">Всего</th>
 			  </tr>
 <?
 	foreach ($_SESSION['cart'] as $id => $quantity):	
 		$product=get_product($id,'python');
 ?>
 			  <tr style="color: black;">
-		          <td align="left"style='color: white;padding: 2px;border-top:1px solid black; '><?=$product['title'];?></td>
-		    	  <td align="center" style='color: white;padding: 2px;border-top:1px solid black;border-left: 1px solid #000;'><?=$product['price'];?> Сом</td>
-		    	  <td align="center" style='color: white;padding: 2px;border-top:1px solid black;border-left: 1px solid #000;'><?=$quantity;?></td>
-		    	  <td align="center"style='color: white;padding: 2px;border-top:1px solid black;border-left: 1px solid #000;'><?=$product['price'] * $quantity;?> Сом</td>
+		          <td align="left"style='color: white;padding: 2px;background-color:#fff;color:#000;border-top:1px solid black; '><?=$product['title'];?></td>
+		    	  <td align="center" style='color: white;padding: 2px;background-color:#fff;color:#000;border-top:1px solid black;border-left: 1px solid #000;'><?=$product['price'];?> Сом</td>
+		    	  <td align="center" style='color: white;padding: 2px;background-color:#fff;color:#000;border-top:1px solid black;border-left: 1px solid #000;'><?=$quantity;?></td>
+		    	  <td align="center"style='color: white;padding: 2px;background-color:#fff;color:#000;border-top:1px solid black;border-left: 1px solid #000;'><?=$product['price'] * $quantity;?> Сом</td>
 			  </tr>
 			  <?endforeach;?>
 		</table>
@@ -36,7 +36,7 @@ if($_SESSION['cart'] && !isset($_POST['zakaz'])){
 	 	</p><br><br>
 
 	 </p>
-	 <p style="text-align: center;"><input type="submit" name="zakaz" value="Заказать" style="background-color: #000;color: #fff;padding: 5px 10px;" /></p>
+	 <p style="text-align: center;"><input type="submit" name="zakaz" value="Заказать" style="background-color: #0083ca;color: #fff;padding: 5px 10px;" /></p>
 	
 </form>
 <?

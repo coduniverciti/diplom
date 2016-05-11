@@ -14,6 +14,6 @@ $product = get_product($id,$table);
 		<b>Страниц:</b> <?=$product['stranisa']?><br>
 		<h2><?=$product['price']?> Сом</h2>	
 	</blockquote>
-	<a style="float: right; background-color: black; padding: 2px 10px 3px 10px;border-radius: 10px;font-weight: bold;" href="index.php?view=add_to_cart&id=<?=$product['id']?>">В корзину</a>
+	<a style="float: right; background-color: #0083ca;color:#fff; padding: 2px 10px 3px 10px;border-radius: 10px;font-weight: bold;" href="index.php?view=add_to_cart&id=<?=$product['id']?>">В корзину</a>
 
 </div>
