@@ -1,7 +1,7 @@
 <?
 if($_SESSION['cart'] !== array()){
 ?>
-<h2 align="center" style="color: white;border-bottom: 2px solid #fff;padding-bottom: 20px;">Ваша корзина товаров</h2>
+<h2 align="center" style="color: #000;border-bottom: 1px solid #000;padding-bottom: 20px;">Ваша корзина товаров</h2>
 <form action="index.php?view=update_cart" method="post" id="cart-form">
 
 <table id="mycart" align="center" cellspacing="0" cellpadding="0" border="0" style="border-radius: 10px;">

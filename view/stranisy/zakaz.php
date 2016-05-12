@@ -1,4 +1,4 @@
-<h2 style="text-align: center;border-bottom:2px solid #fff;padding-bottom: 20px;">Оформить заказ.</h2>
+<h2 style="text-align: center;border-bottom:1px solid #000;padding-bottom: 20px;">Оформить заказ.</h2>
 <?
 if($_SESSION['cart'] && !isset($_POST['zakaz'])){
 ?>
