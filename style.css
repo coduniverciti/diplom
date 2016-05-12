@@ -238,11 +238,12 @@ ul{
     cursor: pointer;
     width: 70px;
     height: 22px;
+    color: white;
     font-weight: bold;
-    font-size: 15px;
-    font-family: cursive;
+    font-size: 18px;
+    font-family: sans-serif;
     line-height: 12px;
-    background: #C1CDCD;
+    background-color: #0083ca;
 }
 .footer{
     height: 60px;
