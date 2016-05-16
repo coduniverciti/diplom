@@ -36,7 +36,7 @@
           </div>
           <!--Header-->
               <!-- left menu -->
-              <div style="position: relative;width: 200px; height: 500px;float: left;margin: 30px 0 0 40px">
+              <div style="border:2px dotted blue;position: relative;width: 200px; height: 500px;float: left;margin: 30px 0 0 40px">
                         <object width="200" height="500">
                           <param name="movie" value="banner">
                           <embed src="logo/banner.swf" width="200" height="500"></embed>
