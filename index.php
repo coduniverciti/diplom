@@ -21,5 +21,7 @@ if($_GET['view']=='update_cart'){
 	header('Location:index.php?view=carzina');
 }
 $view =empty($_GET['view'])?'python' : $_GET['view']; 
+/*$_SERVER[DOCUMENT_ROOT]
+ Директория корня документов, в которой выполняется текущий скрипт, в точности та, которая указана в конфигурационном файле сервера. phpinfo();*/
 include($_SERVER[DOCUMENT_ROOT].'/view/shablon/books.php');
 ?>
