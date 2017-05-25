@@ -23,7 +23,7 @@ echo "<h2 style='padding-bottom:10px;border-bottom:2px solid #fff;'>Админ �
 echo "<h2 style=''>Добавления книг</h2>";
 ?>
 <div>
-	<form action="<?=$_SERVER['PHP_SELF']?>" method='post' style='float: left;margin-bottom:10%;color: #fff;font-weight: bold;'>
+	<form action="<?=$_SERVER['PHP_SELF']?>" method='post' style='float: left;margin-bottom:10%;color: #000;font-weight: bold;'>
 		<label><b>Названия книг:</b><input type="text" name="title"required></label><br><br>
 		<label><b>Ссылка на изображения:</b><input type="text" name="img"required></label><br><br>
 		<label><b>Год:</b><input type="text" name="god"required></label><br><br>
