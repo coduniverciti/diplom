@@ -24,13 +24,13 @@ echo "<h2 style=''>Добавления книг</h2>";
 ?>
 <div>
 	<form action="<?=$_SERVER['PHP_SELF']?>" method='post' style='float: left;margin-bottom:10%;color: #fff;font-weight: bold;'>
-		<label>Названия книг:<input type="text" name="title"required></label><br><br>
-		<label>Ссылка на изображения:<input type="text" name="img"required></label><br><br>
-		<label>Год:<input type="text" name="god"required></label><br><br>
-		<label>Издательство:<input type="text" name="izdatelstvo"required></label><br><br>
-		<label>Формать книг:<input type="text" name="format"required></label><br><br>
-		<label>Страница:<input type="text" name="stranisa"required></label><br><br>
-		<label>Цена:<input type="text" name="price"required></label><br><br>
+		<label><b>Названия книг:</b><input type="text" name="title"required></label><br><br>
+		<label><b>Ссылка на изображения:</b><input type="text" name="img"required></label><br><br>
+		<label><b>Год:</b><input type="text" name="god"required></label><br><br>
+		<label><b>Издательство:</b><input type="text" name="izdatelstvo"required></label><br><br>
+		<label><b>Формать книг:</b><input type="text" name="format"required></label><br><br>
+		<label><b>Страница:</b><input type="text" name="stranisa"required></label><br><br>
+		<label><b>Цена:</b><input type="text" name="price"required></label><br><br>
 		<textarea rows='7' cols='40'name="textt" style="margin-left: 150px;"placeholder='Описания книг'></textarea><br>
 		<input style='float:right;margin-top: 20px;'type="submit" name="add_book" value="Добавить книгу">
 	</form>
